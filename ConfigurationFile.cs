@@ -47,7 +47,7 @@ namespace ExpandableChests
 
                 allowAddRow = config("2 - Config", "Allow Expand Containers", true, "Enabling/Disabling increasing container sizes (default = true)");
                 allowReset = config("2 - Config", "Allow Reset Containers Expansions", true, "Enabling/Disabling resetting expanded containers (default = true)");
-                expandCost = config("2 - Config", "Expand Cost (%)", 50, new ConfigDescription("Expand Cost of the original cost in percentage (0 is free, 100 is same amount as original cost)", new AcceptableValueRange<int>(0, 100)));
+                expandCost = config("2 - Config", "Expand Cost (%)", 50, "Expand Cost of the original cost in percentage (0 is free, 100 is same amount as original cost, 200 double cost, etc)");
                 maxExpandedRows = config("2 - Config", "Max Expansions", 2, "Max Expanded Rows in allowed containers");
                 
                 translateAddRow = config("3 - Translations", "Add Row", "Add Row", "Translation for 'Add Row'");

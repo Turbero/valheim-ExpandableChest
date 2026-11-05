@@ -43,7 +43,7 @@ namespace ExpandableChests
                     }
                 });
             }
-            containerIncreaseBtnGO.SetActive(ConfigurationFile.allowAddRow.Value && containerIsScope);
+            containerIncreaseBtnGO.SetActive(ConfigurationFile.allowAddRow.Value && containerIsScope && ConfigurationFile.expandCost.Value >= 0);
 
             if (containerResetBtnGO == null)
             {
@@ -70,7 +70,7 @@ namespace ExpandableChests
                         Player.m_localPlayer.Message(MessageHud.MessageType.Center, ConfigurationFile.translateContainerCapacityAtMinimumCapacity.Value);
                 });
             }
-            containerResetBtnGO.SetActive(ConfigurationFile.allowReset.Value && containerIsScope);
+            containerResetBtnGO.SetActive(ConfigurationFile.allowReset.Value && containerIsScope && ConfigurationFile.expandCost.Value >= 0);
         }
 
         private static bool canIncreaseContainer(Inventory inventory, Container container)
