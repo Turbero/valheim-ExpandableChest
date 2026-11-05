@@ -1,6 +1,6 @@
 {
     "name": "ExpandableChests",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/Turbero/valheim-ExpandableChests",
     "description": "(Commissioned) Mod to expand vanilla containers to add more rows by paying some materials. Set up max expansions and cost and dive in your home chests.",
     "dependencies": [

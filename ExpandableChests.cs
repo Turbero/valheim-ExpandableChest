@@ -8,7 +8,7 @@ namespace ExpandableChests
     {
         public const string GUID = "Turbero.ExpandableChests";
         public const string NAME = "Expandable Chests";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.1";
 
         private readonly Harmony harmony = new Harmony(GUID);
 
